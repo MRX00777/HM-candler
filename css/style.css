@@ -6,6 +6,7 @@ html {
 *::after,
 *::before {
     box-sizing: inherit;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -36,6 +37,7 @@ button {
     -webkit-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.75);
+    transition: 300ms;
 }
 
 .button {
@@ -44,6 +46,12 @@ button {
     font-size: 14px;
     font-weight: 600;
     font-family: "Comfortaa", sans-serif;
+}
+
+.promo-link:hover,
+button:hover{
+    background: rgb(123, 97, 82);
+    color: white;
 }
 
 section {
@@ -104,17 +112,28 @@ section {
 }
 
 
-.scroll-top{
+.scroll-top {
     position: fixed;
     width: 40px;
     height: 45px;
-    background-color: rgb(151, 123, 106);
+    background: rgb(123, 97, 82);
     border-radius: 8px;
     bottom: 30px;
     right: 20px;
     z-index: 999;
     font-size: 20px;
     color: rgba(255, 248, 243, 0.885);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    transition: 300ms;
+}
+
+.scroll-top:hover{
+    background: rgb(140, 111, 95);
 }
 
 
@@ -574,10 +593,168 @@ header {
 /* section Certificates end */
 
 
+/* section Questions start */
+
+.accordeon {
+    
+}
+
+.accordeon__item {
+    box-shadow: 0px 4px 11px 0px rgba(196, 174, 151, 0.2);
+    background: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.accordeon__title {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: left;
+    font-family: "Yeseva One", serif;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    background: transparent;
+    box-shadow: none;
+    width: 100%;
+    padding: 16px 26px 16px 13px;
+}
+
+.accordeon__title:hover{
+    background: rgb(255, 255, 255);
+    color: #000;
+}
+
+.accordeon__title img{
+    display: block;
+}
+
+.accordeon__text {
+    display: none;
+    padding: 20px 40px;
+    font-size: 15px;
+}
+
+.questions__content{
+    width: 100%;
+}
+
+
+/* section Questions end */
+
+/* section Promo start */
+
+.promo {
+    background-image: url(./../images/promo-bg.jpg);
+    padding: 140px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.promo__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.promo-text {
+    font-family: "Yeseva One", serif;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-left: 56px;
+    max-width: 765px;
+    margin-right: 110px;
+}
+
+.promo-link {
+    background: rgb(255, 189, 89);
+    color: rgb(39, 39, 39);
+    display: inline-block;
+    padding: 17px 17px;
+    min-width: 170px;
+    font-size: 16px;
+    text-align: center;
+    transition: 300ms;
+}
 
 
 
+/* section Promo end */
 
+
+/* section Contacts start */
+
+.contacts {
+    padding: 150px 0 50px;
+}
+
+.contacts__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.form {
+    background-color: #fff;
+    width: 664px;
+    padding: 75px 42px 67px;
+}
+
+.form__title {
+    font-family: "Yeseva One", serif;
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: black;
+}
+
+.form__input {
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px 7px;
+    color: black;
+}
+
+.form__input::placeholder {
+    color: rgb(179, 179, 179);
+    font-family: Comfortaa;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.form__btn {
+    padding: 17px 34px;
+    color: rgb(39, 39, 39);
+    font-family: Comfortaa;
+    font-size: 14px;
+    font-weight: 600;
+    background: rgb(255, 189, 89);
+    margin-top: 50px;
+}
+
+.contacts__img {
+    width: 448px;
+    height: 604px;
+}
+
+.contacts__img-content {
+    height: 100%;
+    width: 100%;
+}
+
+/* section Contacts start */
 
 /* Footer */
 
@@ -614,6 +791,29 @@ header {
 
 
 
+
+
+
+
+
+@media (max-width: 1300px) {
+    .form {
+        width: 592px;
+        padding: 75px 21px 67px;
+    }
+
+    .contacts__img {
+        width: 335px;
+        height: 510px;
+    }
+
+    .contacts__inner {
+        gap: 30px;
+    }
+}
+
+
+
 @media (max-width: 1150px) {
     .feedback__slider {
         width: 600px;
@@ -623,10 +823,11 @@ header {
         width: 300px;
         height: 300px;
     }
+
+    .contacts {
+        padding: px 50px !important;
+    }
 }
-
-
-
 
 
 @media (max-width: 1050px) {
@@ -725,6 +926,25 @@ header {
         height: 270px;
     }
 
+    .promo-text {
+        padding-left: 0;
+    }
+
+    .form {
+        width: 440px;
+        padding: 30px 18px 22px;
+    }
+
+    .form__title {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .contacts__img {
+        width: 187px;
+        height: 285px;
+    }
+
 }
 
 @media (max-width: 900px) {
@@ -791,7 +1011,7 @@ header {
 @media (max-width: 768px) {
     body {
         font-size: 10px;
-        
+
     }
 
     .container {
@@ -932,6 +1152,18 @@ header {
         gap: 0 20px;
     }
 
+    .promo-link {
+        padding: 15px 19.5px;
+    }
+
+    .promo-text {
+        font-size: 25px;
+    }
+
+    .promo {
+        padding: 70px 0
+    }
+
 }
 
 
@@ -1021,6 +1253,29 @@ header {
         text-align-last: center;
     }
 
+    .promo-link {
+        padding: 10px 19.5px;
+        min-width: 140px;
+        font-size: 14px;
+    }
+
+    .promo-text {
+        font-size: 24px;
+    }
+
+    .contacts__img {
+        display: none;
+    }
+
+    .contacts {
+        padding: 50px 20px;
+    }
+
+    .form__btn {
+        padding: 14px 21px;
+        margin-top: 30px;
+    }
+
 }
 
 @media (max-width: 500px) {
@@ -1076,6 +1331,26 @@ header {
     }
 
     .feedback__slider {
+        width: 400px;
+    }
+
+    .promo__inner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .promo-text {
+        width: 75%;
+        padding-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    .contacts {
+        padding: 50px 10px;
+    }
+
+    .form {
         width: 400px;
     }
 
@@ -1259,5 +1534,23 @@ header {
 
     .team__item-descr {
         font-size: 13px;
+    }
+
+    .promo-text {
+        width: 75%;
+        padding-left: 15px;
+    }
+
+    .form {
+        width: 320px;
+        padding: 30px 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 350px) {
+    .promo-text {
+        width: 77%;
+        padding-left: 15px;
     }
 }

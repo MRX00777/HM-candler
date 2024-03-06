@@ -37,12 +37,12 @@
           <span></span>
         </button>
         <ul class="menu__list header__menu-list">
-          <li class="menu__list-item"><a href="#" class="menu__list-link">Про нас</a></li>
-          <li class="menu__list-item"><a href="#" class="menu__list-link">Каталог</a></li>
-          <li class="menu__list-item"><a href="#" class="menu__list-link">Команда</a></li>
-          <li class="menu__list-item"><a href="#" class="menu__list-link">Відгуки</a></li>
-          <li class="menu__list-item"><a href="#" class="menu__list-link">Курси</a></li>
-          <li class="menu__list-item"><a href="#" class="menu__list-link">Контакти</a></li>
+          <li class="menu__list-item"><a href="#pronas" class="menu__list-link">Про нас</a></li>
+          <li class="menu__list-item"><a href="#katalog" class="menu__list-link">Каталог</a></li>
+          <li class="menu__list-item"><a href="#comand" class="menu__list-link">Команда</a></li>
+          <li class="menu__list-item"><a href="#vidguki" class="menu__list-link">Відгуки</a></li>
+          <li class="menu__list-item"><a href="#kursi" class="menu__list-link">Курси</a></li>
+          <li class="menu__list-item"><a href="#kontakti" class="menu__list-link">Контакти</a></li>
         </ul>
       </nav>
       <a href="tel:+4565789876" class="phone">+45 65 78 98 76</a>
@@ -53,7 +53,7 @@
   <main class="main">
 
 
-    <section class="top">
+    <section id="top" class="top">
       <div class="top__inner container ">
         <div class="top__content">
           <h3 class="top__title">Створіть атмосферу затишку та гармонії!</h3>
@@ -72,7 +72,7 @@
 
 
 
-    <section class="about">
+    <section id="pronas" class="about">
       <div class="container about__inner">
         <div class="about__content">
           <h2 class="about-title ">Про нас</h2>
@@ -104,7 +104,7 @@
     </section>
 
 
-    <section class="products">
+    <section id="katalog" class="products">
       <div class="container section__inner">
         <div class="products__descr section__descr">
           <h2 class="products__title big__title">Наші товари</h2>
@@ -216,7 +216,7 @@
       </div>
     </section>
 
-    <section class="courses section">
+    <section id="kursi" class="courses section">
       <div class="container section__inner">
         <div class=" courses__descr section__descr">
           <h2 class="courses__title big__title">Наші курси</h2>
@@ -254,7 +254,7 @@
     </section>
 
 
-    <section class="team section">
+    <section id="comand" class="team section">
       <div class="container section__inner">
         <div class=" section__descr">
           <h2 class=" big__title">Наші викладачі</h2>
@@ -298,7 +298,7 @@
 
 
 
-    <section class="feedback section">
+    <section id="vidguki" class="feedback section">
       <div class="container section__inner">
         <div class="feedback__descr section__descr">
           <h2 class="big__title">
@@ -469,12 +469,62 @@
 
         </div>
 
-        <div class="questions__content section__content-descr section--decor">
+        <div class="questions__content">
+          <div class="accordeon">
 
+            <div class="accordeon__item">
+              <button class="accordeon__title">Які запахи доступні для свічок?<img class="accordion-arrow" src="./images/arrow-down.png" alt="arrow"></button>
+              <div class="accordeon__text">
+                <ol>
+                  <li>Ваніль - теплий, сладкий і затишний аромат, який нагадує про домашній затишок.</li>
+                  <li>Лаванда - приємний, успокійливий і релаксуючий запах, який допомагає зняти стрес і напругу.</li>
+                  <li>Рожевий грейпфрут - свіжий, фруктовий і енергійний аромат, який допомагає підняти настрій і збадьорити.</li>
+                  <li>Кедр - деревний, земний і маскулінний аромат, який надає відчуття стабільності і надійності.</li>
+                  <li>Яблуко і кориця - теплий і затишний аромат, який нагадує про зимові свята і домашність.</li> 
+                </ol>
+              </div>
+            </div>
+
+            <div class="accordeon__item">
+              <button class="accordeon__title">Які запахи доступні для свічок?<img class="accordion-arrow" src="./images/arrow-down.png" alt="arrow"></button>
+              <div class="accordeon__text">
+                <ol>
+                  <li>Ваніль - теплий, сладкий і затишний аромат, який нагадує про домашній затишок.</li>
+                  <li>Лаванда - приємний, успокійливий і релаксуючий запах, який допомагає зняти стрес і напругу.</li>
+                  <li>Рожевий грейпфрут - свіжий, фруктовий і енергійний аромат, який допомагає підняти настрій і збадьорити.</li>
+                  <li>Кедр - деревний, земний і маскулінний аромат, який надає відчуття стабільності і надійності.</li>
+                  <li>Яблуко і кориця - теплий і затишний аромат, який нагадує про зимові свята і домашність.</li> 
+                </ol>
+              </div>
+            </div>
+            
+          </div>
         </div>
       </div>
     </section>
 
+    <section class="promo">
+      <div class="container promo__inner">
+        <p class="promo-text">Купуйте більше, економте більше </p>
+        <a href="" class="promo-link">В каталог</a>
+      </div>
+    </section>
+
+    <section id="kontakti" class="contacts">
+      <div class="container contacts__inner">
+        <form class="form" action="">
+          <p class="form__title">
+            Підпишись на наші акції
+          </p>
+          <input type="text" class="form__input" placeholder="Імя">
+          <input type="email" class="form__input" placeholder="Е-mail">
+          <button class="form__btn" type="submit">Підписатись</button>
+        </form>
+        <div class="contacts__img">
+          <img src="./images/contacts-img.jpeg" alt="" class="contacts__img-content">
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -509,7 +559,7 @@
     </div>
   </footer>
 
-  <button class="scroll-top"><i class="fa-solid fa-up-long"></i></button>
+  <button><a href="#top" class="scroll-top"><i class="fa-solid fa-up-long"></i></a></button>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
